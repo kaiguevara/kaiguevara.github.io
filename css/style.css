@@ -1,81 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-
+/* Import Inter font */
 body {
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
+  background: #fff;
+  color: #111;
   line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
 }
 
-header {
-  background: #003366;
-  color: white;
-  padding: 2rem;
-  text-align: center;
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
 }
-
-nav a {
-  margin: 0 1rem;
-  color: white;
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
   text-decoration: none;
-  font-weight: 600;
+  color: #111;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav-links a:hover {
+  color: #0073e6;
 }
 
-nav a:hover {
-  text-decoration: underline;
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  background: white;
+  border: 1px solid #eee;
+  list-style: none;
+  padding: 0.5rem 0;
+  display: none;
+  min-width: 160px;
+}
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+}
+.dropdown-menu li a {
+  color: #111;
+  display: block;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
-section {
-  padding: 2rem;
-  max-width: 900px;
+/* Hero */
+.hero {
+  padding: 8rem 2rem 4rem;
+  text-align: center;
+  max-width: 800px;
   margin: auto;
 }
-
-h2 {
-  color: #003366;
-  margin-bottom: 1rem;
-}
-
-.accordion-button {
-  background: #0055aa;
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 0.75rem 1rem;
-  width: 100%;
-  text-align: left;
-  outline: none;
-  transition: 0.3s;
-  font-weight: 600;
-  border-radius: 5px;
-  margin-top: 0.5rem;
-}
-
-.accordion-button:hover {
-  background: #003366;
-}
-
-.accordion-content {
-  padding: 0 1rem;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  background-color: #e6f0ff;
-  border-radius: 0 0 5px 5px;
+.hero h1 {
+  font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
-
-.card {
-  background: white;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
+.hero p {
+  font-size: 1.2rem;
+  color: #444;
 }
 
+/* Sections */
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Mission Cards */
+.mission-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.card {
+  flex: 1;
+  min-width: 250px;
+  padding: 1.5rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: #fafafa;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.card h3 {
+  margin-top: 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid #eee;
+  font-size: 0.9rem;
+  color: #555;
+}
+footer a {
+  color: #111;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #0073e6;
 }
