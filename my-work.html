@@ -1,50 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kai Guevara | My Work</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Work | Kai Guevara</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
 </head>
 <body>
+  <!-- Navigation -->
   <header>
-    <h1>My Work</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="my-work.html">My Work</a>
-      <a href="energy-insights.html">Energy Insights</a>
-      <a href="contact.html">Contact</a>
+    <nav class="navbar">
+      <div class="logo">Kai Guevara</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="energy-insights.html">Energy Insights</a></li>
+        <li><a href="my-work.html">My Work</a></li>
+        <li><a href="lab-tools.html">Lab Tools</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="accordion">
-      <button class="accordion-button">Microgrid Project</button>
-      <div class="accordion-content">
-        <p>Designed concept and initiated NEPA compliance for a net-zero microgrid in Death Valley.</p>
+  <!-- Main Content -->
+  <main>
+    <section class="projects">
+      <h1>My Work</h1>
+      <p>Explore my professional experience, projects, volunteering, and coursework in energy systems and climate resilience.</p>
+
+      <!-- Professional Experience -->
+      <div class="experience-section">
+        <h2>Professional Experience</h2>
+
+        <div class="experience-card">
+          <h3>Regional Manager</h3>
+          <p><strong>WattShift</strong> | September 2024 - September 2025</p>
+          <ul>
+            <li>Researched utility grid market trends to collect data on energy generation and time-of-use rates, creating customized utility cost and emission optimization strategies.</li>
+            <li>Tested and debugged Python code to automate thermostats and integrate with LEAP, enabling demand response participation and reducing utility costs by 20% and carbon emissions by 16%.</li>
+            <li>Established partnerships with high-rise buildings, residential communities, solar installers, and consultancies, generating the startup’s first revenue stream through tailored incentive programs.</li>
+          </ul>
+        </div>
+
+        <div class="experience-card">
+          <h3>Interdisciplinary Community Planner</h3>
+          <p><strong>U.S. National Park Service, Death Valley National Park</strong> | May 2024 - August 2024</p>
+          <ul>
+            <li>Created geospatial concept designs and drafted project documents in Maximo to develop a microgrid generating 1,152 MWh of clean energy annually.</li>
+            <li>Examined federal energy policy, analyzed usage data, and drafted NEPA compliance documents to report frameworks for infrastructure transition, presenting work to the US Secretary of the Interior.</li>
+            <li>Led budget preparation, financial planning, and grant documentation for renewable energy projects, securing a $2.5 million grant for deployment and decarbonization.</li>
+          </ul>
+        </div>
+
+        <div class="experience-card">
+          <h3>Data Analyst Assistant</h3>
+          <p><strong>UC Berkeley Office of Education</strong> | June 2023 - February 2024</p>
+          <ul>
+            <li>Collected and maintained attendance and literacy data for 3,000+ students, supporting the office's grant application process.</li>
+            <li>Delivered hands-on support for daily operations by coordinating school visits, conducting inventory audits, troubleshooting technical challenges, and streamlining communications.</li>
+            <li>Assisted in developing grant reports, tracking funding usage, and project outcomes.</li>
+          </ul>
+        </div>
+
+        <div class="experience-card">
+          <h3>Intern</h3>
+          <p><strong>Roots of Success Environmental Literacy Program</strong> | May 2023 - August 2023</p>
+          <ul>
+            <li>Developed a streamlined system through Microsoft Office data structures to connect 100 previously incarcerated graduates with job opportunities in the green sector.</li>
+            <li>Communicated with partner organizations to expand the program’s reach and engagement by 10%.</li>
+            <li>Interpreted program data to assess effectiveness on environmental justice issues.</li>
+          </ul>
+        </div>
       </div>
 
-      <button class="accordion-button">Energy Software</button>
-      <div class="accordion-content">
-        <p>Built home decarbonization software to help households evaluate electrification and solar adoption.</p>
+      <!-- Volunteering -->
+      <div class="volunteer-section">
+        <h2>Volunteering</h2>
+        <div class="experience-card">
+          <h3>RE+ Conference Volunteer</h3>
+          <p>September 2024</p>
+          <ul>
+            <li>Assisted with event logistics at the Renewable Energy+ conference in Anaheim, including setup, teardown, registration, and organization of conference spaces.</li>
+            <li>Provided registration support and engaged attendees and representatives from leading renewable energy companies.</li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>ArcGIS StoryMaps</h3>
-      <p>Visual analyses of urban air quality, redlining, and environmental justice in the Bay Area.</p>
-    </div>
-    <div class="card">
-      <h3>Home Energy Dashboard</h3>
-      <p>Interactive tool to explore savings from electrification and solar (in progress).</p>
-    </div>
-  </section>
+      <!-- Education -->
+      <div class="education-section">
+        <h2>Education</h2>
+        <div class="experience-card">
+          <h3>University of California, Berkeley</h3>
+          <p>BS in Conservation and Resource Studies (Sustainable Development) & BA in Cognitive Science (AI) | August 2021 - May 2025</p>
+          <ul>
+            <li>GPA: 3.8</li>
+            <li>Relevant Coursework: GIS and Spatial Analysis, Climate Change and City Planning, The Politics and Practice of Sustainability Transitions, Data Science in Global Change Biology, Environmental Problem Solving, Discrete Mathematics, Structure and Interpretation of Computer Programs, Data Science, Analytic Geometry and Calculus.</li>
+          </ul>
+        </div>
+        <div class="experience-card">
+          <h3>University of San Francisco</h3>
+          <p>Intended MS in Energy Systems Management</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer>
+    <p>&copy; 2025 Kai Guevara. All Rights Reserved.</p>
+  </footer>
 </body>
-<script src="js/script.js"></script>
 </html>
 
